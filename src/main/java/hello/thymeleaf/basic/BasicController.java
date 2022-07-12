@@ -69,6 +69,13 @@ public class BasicController {
         return "basic/date";
     }
 
+    @GetMapping("/link")
+    public String link(Model model) {
+        model.addAttribute("param1","data1");
+        model.addAttribute("param2","data2");
+        return "basic/link";
+    }
+
     // 내부에서 쓰는 것 생성해줌
    @Data
     static class User{
